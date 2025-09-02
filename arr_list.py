@@ -21,7 +21,7 @@ def insert( pos, e ) :
   global size # size는 전역변수
   if not isFull() and 0 <= pos <= size : # 포화 상태가 아니고 pos가 유효한 위치이면
     for i in range(size, pos,-1): # pos부터 size-1까지의 모든 항목을 한 칸씩 뒤로 옮김
-      array[I] = array[i-1]
+      array[i] = array[i-1]
     array[pos] = e # pos위치에 새로운 요소 추가
     size += 1 # 요소의 수 size가 하나 증가
   else : 
@@ -45,7 +45,7 @@ def delete( pos ) :
 
 # ------------- pos 위치의 항목을 참조 getEntry(pos) --------------
 def getEntry(pos) :
-  if O<=pos< size: # pos가 유효한 위치(0~size-1)이면 arraylpos] 반환
+  if 0 <=pos< size: # pos가 유효한 위치(0~size-1)이면 arraylpos] 반환
     return array(pos)
   else : return None
 # 그렇지 않으면 None 반환
