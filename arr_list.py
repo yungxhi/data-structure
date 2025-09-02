@@ -55,7 +55,7 @@ def getEntry(pos):
 
 
 # ------------- 테스트 프로그램 --------------------------------------
-if __name__ == "_main_":
+if __name__ == "__main__":
     print("최초   ", array[0:size])
     insert(0, 10)
     insert(0, 20)
