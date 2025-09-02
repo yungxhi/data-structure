@@ -5,18 +5,18 @@ array =[None]*capacity #요소 배열: [None, .., None] (길이가 capacity)
 size = 0 # 리스트 항목들의 개수: 공백상태(0)로 초기화 함
 
 
-# ------------- 공백 상태 검사 isEmpty() --------------
+# ------------- 공백 상태 검사 isEmpty() ----------------------------
 def isEmpty( ) : 
   if size == 0 : return True  # 공백이면 True 반환 # 아니면 False 반환
   else : return False # 아니면 False 반환
 
 
-# ------------- 포화 상태 검사 isFull() --------------
+# ------------- 포화 상태 검사 isFull() -----------------------------
 def isFull( ) : # size가 capacity이면 포화상태 비교연산 size == capacity 결과를 바로 반환
   return size == capacity
 
 
-# ------------- 삽입 연산 insert() --------------
+# ------------- 삽입 연산 insert() ---------------------------------
 def insert( pos, e ) :
   global size # size는 전역변수
   if not isFull() and 0 <= pos <= size : # 포화 상태가 아니고 pos가 유효한 위치이면
@@ -29,7 +29,7 @@ def insert( pos, e ) :
     exit()
 
 
-# ------------- 삭제 연산 delete() --------------
+# ------------- 삭제 연산 delete() ---------------------------------
 def delete( pos ) :
   global size # size는 전역변수
   if not isEmpty() and 0 <= pos < size : # 공백 상태가 아니고 pos가 유효한 위치이면
@@ -43,7 +43,7 @@ def delete( pos ) :
     exit()
 
 
-# ------------- pos 위치의 항목을 참조 getEntry(pos) --------------
+# ------------- pos 위치의 항목을 참조 getEntry(pos) ------------------
 def getEntry(pos) :
   if 0 <=pos< size: # pos가 유효한 위치(0~size-1)이면 arraylpos] 반환
     return array(pos)
@@ -51,7 +51,7 @@ def getEntry(pos) :
 # 그렇지 않으면 None 반환
 
 
-# ------------- 테스트 프로그램 -------------
+# ------------- 테스트 프로그램 --------------------------------------
 if __name__ == "_main_":
     print("최초   ", array[0:size])
     insert(0, 10)
