@@ -69,9 +69,13 @@ if __name__ == "__main__":
 
     print("최초", L)
     L.insert(0, 10)
+    print("삽입", L)
     L.insert(0, 20)
+    print("삽입", L)
     L.insert(1, 30)
+    print("삽입", L)
     L.insert(3, 40)
+    print("삽입", L)
     L.insert(2, 50)
 
     print("삽입x5 ", L)
