@@ -7,6 +7,7 @@ class ArrayStack :
 # 공백상태와 포화상태 검사
   def isEmpty(self):
     return self.top == -1
+
   def isFull(self):
     return self.top == self.capacity - 1
 
