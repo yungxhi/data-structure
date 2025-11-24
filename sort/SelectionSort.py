@@ -15,7 +15,7 @@ def selection_sort(A) :
             temp = A[i]                         # 배열 항목 교환 
             A[i] = A[least]
             A[least] = temp
-        printStep(A, i + 1);                # 중간 과정 출력용 문장
+        printStep(A, i + 1)              # 중간 과정 출력용 문장
 
 
 if __name__ == "__main__":
